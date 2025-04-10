@@ -1,19 +1,19 @@
 package org.example;
 
-import org.example.exceptions.SomeShityException;
+import org.example.exceptions.*;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class InputReader {
 
-    public static String readInput() throws SomeShityException {
+    public static String readInput() {
         try {
             Scanner scanner = App.getInstance().getScanner();
-            String input = scanner.nextLine();
-            return input;
+            return scanner.nextLine().trim();
         } catch (NoSuchElementException e) {
-            throw new SomeShityException();
+            App.getInstance().setScanner(new Scanner(System.in));
+            throw new EOFInputException();
         }
     }
 }

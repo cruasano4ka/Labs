@@ -1,12 +1,11 @@
 package org.example;
 
 import org.example.commands.*;
-import org.example.exceptions.SomeShityException;
 
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws SomeShityException {
+    public static void main(String[] args) {
 
         App app = App.getInstance();
         app.setCommandManager(new CommandManager());

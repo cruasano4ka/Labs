@@ -1,7 +1,7 @@
 package org.example;
 
 import org.example.exceptions.NoSuchCommandException;
-import org.example.exceptions.SomeShityException;
+import org.example.exceptions.EOFInputException;
 
 import java.util.Scanner;
 
@@ -49,15 +49,22 @@ public class App {
         this.scanner = scanner;
     }
 
-    public void runApp() throws NoSuchCommandException, SomeShityException {
+    public void runApp() {
+        System.out.println("Wazaaa. Введите help для получения списка команд");
+
         while (true) {
             try {
+                System.out.print("Введите название команды: ");
                 String command = InputReader.readInput();
                 commandManager.getCommandByKey(command).execute();
             } catch (NoSuchCommandException e) {
                 System.out.println("Кажется, такой команды не суествует!");
-            } catch (SomeShityException e) {
+            } catch (EOFInputException e) {
+                System.out.println(e.getMessage());
 
+            } catch (Exception e) {
+                System.out.println("Неизвестная ошибка: " + e.getMessage());
+                return;
             }
 
         }
