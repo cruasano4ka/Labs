@@ -5,7 +5,7 @@ public class HistoryCommand implements Command {
     private String description = "history - вывести последние 14 команд (без их аргументов)";
 
     @Override
-    public void execute() {
+    public void execute(String arg) {
 
     }
 

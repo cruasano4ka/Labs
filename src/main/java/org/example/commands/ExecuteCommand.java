@@ -5,7 +5,7 @@ public class ExecuteCommand implements Command{
     private String description = "execute - считать и исполнить скрипт из указанного файла";
 
     @Override
-    public void execute() {
+    public void execute(String fileName) {
 
     }
 

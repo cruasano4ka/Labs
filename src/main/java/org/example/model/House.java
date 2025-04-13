@@ -16,4 +16,8 @@ public class House {
     public void setNumberOfLifts (Long numberOfLifts) {
         this.numberOfLifts = numberOfLifts;
     }
+
+    public String toString() {
+        return "[name=" + name + ", year=" + year + ", numberOfLifts=" + numberOfLifts + "]";
+    }
 }

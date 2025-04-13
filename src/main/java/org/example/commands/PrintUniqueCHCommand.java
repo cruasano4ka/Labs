@@ -5,7 +5,7 @@ public class PrintUniqueCHCommand implements Command {
     private String description = "print_unique_central_heating - вывести уникальные значения поля centralHeating всех элементов в коллекции";
 
     @Override
-    public void execute() {
+    public void execute(String arg) {
 
     }
 

@@ -2,19 +2,19 @@ package org.example.commands;
 
 import org.example.App;
 import org.example.FlatBuilder;
-
-import java.util.Scanner;
+import org.example.model.Flat;
 
 public class AddCommand implements Command {
 
     private String description = "add - добавить новый элемент в коллекцию";
 
     @Override
-    public void execute() {
-        Scanner scanner = App.getInstance().getScanner();
+    public void execute(String arg) {
         FlatBuilder flatBuilder = new FlatBuilder();
         flatBuilder.buildFlat();
-        scanner.nextLine();
+        Flat flat = flatBuilder.getFlat();
+        App.getInstance().getCollectionManager().getCollection().add(flat);
+        System.out.println("Квартира с id " + flat.getId() + " была успешно создана!");
     }
 
     @Override

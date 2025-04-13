@@ -55,16 +55,20 @@ public class App {
         while (true) {
             try {
                 System.out.print("Введите название команды: ");
-                String command = InputReader.readInput();
-                commandManager.getCommandByKey(command).execute();
+                String[] input = InputReader.readInput().split(" ", 2);
+                String arg = "";
+                if (input.length > 1) {
+                    arg = input[1];
+                }
+                commandManager.getCommandByKey(input[0]).execute(arg);
             } catch (NoSuchCommandException e) {
-                System.out.println("Кажется, такой команды не суествует!");
+                System.out.println("Кажется, такой команды не суествует! ");
             } catch (EOFInputException e) {
                 System.out.println(e.getMessage());
-
+                System.exit(0);
             } catch (Exception e) {
-                System.out.println("Неизвестная ошибка: " + e.getMessage());
-                return;
+                System.out.println("Ошибочка: " + e.getMessage());
+                System.exit(0);
             }
 
         }

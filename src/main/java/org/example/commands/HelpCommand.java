@@ -7,7 +7,7 @@ public class HelpCommand implements Command {
 
     private final String description = "help - вывести спарвку по доступным командам";
 
-    public void execute() {
+    public void execute(String args) {
         CommandManager manager = App.getInstance().getCommandManager();
         for (Command command : manager.getCommands().values()) {
             System.out.println(command.getDescription());

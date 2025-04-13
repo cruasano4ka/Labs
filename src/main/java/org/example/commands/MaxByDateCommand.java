@@ -5,7 +5,7 @@ public class MaxByDateCommand implements Command {
     private String description = "max_by_creation_date - выводит самый старый объект в коллекции";
 
     @Override
-    public void execute() {
+    public void execute(String arg) {
 
     }
 

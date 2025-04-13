@@ -5,7 +5,7 @@ public class SaveCommmand implements Command {
     private String description = "save - сохранить коллекцию в файл";
 
     @Override
-    public void execute() {
+    public void execute(String arg) {
 
     }
 

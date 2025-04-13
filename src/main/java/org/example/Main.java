@@ -1,7 +1,9 @@
 package org.example;
 
 import org.example.commands.*;
+import org.example.model.Flat;
 
+import java.util.PriorityQueue;
 import java.util.Scanner;
 
 public class Main {
@@ -10,6 +12,7 @@ public class Main {
         App app = App.getInstance();
         app.setCommandManager(new CommandManager());
         app.setCollectionManager(new CollectionManager());
+        app.getCollectionManager().setCollection(new PriorityQueue<Flat>());
         app.setScanner(new Scanner(System.in));
         app.getCommandManager().addCommand("help", new HelpCommand());
         app.getCommandManager().addCommand("add", new AddCommand());

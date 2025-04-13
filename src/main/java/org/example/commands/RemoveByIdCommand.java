@@ -5,7 +5,7 @@ public class RemoveByIdCommand implements Command {
     private String description = "remove_by_id id - удалить элемент из коллекции по его id";
 
     @Override
-    public void execute() {
+    public void execute(String id) {
 
     }
 

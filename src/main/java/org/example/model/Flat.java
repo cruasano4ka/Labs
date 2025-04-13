@@ -3,7 +3,7 @@ package org.example.model;
 import java.io.Serializable;
 
 public class Flat implements Serializable, Comparable<Flat> {
-    private static Long id; //Поле не может быть null, Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
+    private Long id; //Поле не может быть null, Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
     private String name; //Поле не может быть null, Строка не может быть пустой
     private Coordinates coordinates; //Поле не может быть null
     private java.util.Date creationDate; //Поле не может быть null, Значение этого поля должно генерироваться автоматически
@@ -13,6 +13,11 @@ public class Flat implements Serializable, Comparable<Flat> {
     private Furnish furnish; //Поле может быть null
     private View view; //Поле может быть null
     private House house; //Поле может быть null
+    private static long idCounter = 0;
+
+    public Flat() {
+        this.id = idCounter++;
+    }
 
     public void setId(Long id) {
         this.id = id;
@@ -97,5 +102,13 @@ public class Flat implements Serializable, Comparable<Flat> {
     @Override
     public int compareTo(Flat otherFlat) {
         return Long.compare(this.id, otherFlat.id);
+    }
+
+    @Override
+    public String toString() {
+        return "Flat [id=" + id + ", name=" + name + ", coordinates=" + coordinates.toString() +
+                ", creationDate=" + creationDate + ", area=" + area + ", numberOfRooms=" +
+                numberOfRooms + ", centralHeating=" + centralHeating + ", furnish=" + furnish +
+                ", view=" + view + ", house=" + house.toString() + "]";
     }
 }

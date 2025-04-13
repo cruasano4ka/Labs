@@ -5,7 +5,7 @@ public class RemoveHeadCommand implements Command {
     private String description = "remove_head - вывести первый элемент коллекции и удалить его";
 
     @Override
-    public void execute() {
+    public void execute(String arg) {
 
     }
 
