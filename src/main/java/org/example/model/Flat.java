@@ -101,7 +101,7 @@ public class Flat implements Serializable, Comparable<Flat> {
 
     @Override
     public int compareTo(Flat otherFlat) {
-        return Long.compare(this.id, otherFlat.id);
+        return Long.compare(this.area, otherFlat.area);
     }
 
     @Override

@@ -3,16 +3,17 @@ package org.example;
 import org.example.model.Flat;
 
 import java.util.Collection;
+import java.util.PriorityQueue;
 
 public class CollectionManager {
 
-    private Collection<Flat> collection;
+    private PriorityQueue<Flat> collection;
 
-    public Collection<Flat> getCollection() {
+    public PriorityQueue<Flat> getCollection() {
         return collection;
     }
 
-    public void setCollection(Collection<Flat> collection) {
+    public void setCollection(PriorityQueue<Flat> collection) {
         this.collection = collection;
     }
 
@@ -26,11 +27,7 @@ public class CollectionManager {
     }
 
     public void removeById(Long id) {
-        try {
-            collection.remove(getFlatById(id));
-        } catch (NullPointerException e) {
-            System.out.println(e.getMessage());
-        }
+        collection.remove(getFlatById(id));
     }
 
 }

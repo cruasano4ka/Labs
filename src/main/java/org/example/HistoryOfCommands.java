@@ -21,7 +21,7 @@ public class HistoryOfCommands {
         System.out.println("=== Последние 14 команд ===");
         int counter = 1;
         for (String op : history) {
-            System.out.println(counter++ + ". " + op);
+            System.out.println(counter++ + ") " + op);
         }
     }
 }

@@ -20,6 +20,7 @@ public class UpdateIdCommand implements Command {
             builder.buildFlat();
             Flat flat = builder.getFlat();
             flat.setId(Long.parseLong(id));
+            App.getInstance().getCollectionManager().getCollection().add(flat);
             System.out.println("Данные квартиры с id " + id + " были успешно обновлены");
         }
     }

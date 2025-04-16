@@ -13,6 +13,7 @@ public class Main {
         app.setCommandManager(new CommandManager());
         app.setCollectionManager(new CollectionManager());
         app.getCollectionManager().setCollection(new PriorityQueue<Flat>());
+        app.setHistory(new HistoryOfCommands());
         app.setScanner(new Scanner(System.in));
         app.getCommandManager().addCommand("help", new HelpCommand());
         app.getCommandManager().addCommand("add", new AddCommand());

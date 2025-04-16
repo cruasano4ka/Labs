@@ -12,9 +12,10 @@ public class App {
 
     private static App app;
 
-    CollectionManager collectionManager;
-    CommandManager commandManager;
-    Scanner scanner;
+    private CollectionManager collectionManager;
+    private CommandManager commandManager;
+    private Scanner scanner;
+    private HistoryOfCommands history;
 
     public static App getInstance() {
         if (app == null) {
@@ -49,6 +50,14 @@ public class App {
         this.scanner = scanner;
     }
 
+    public HistoryOfCommands getHistory() {
+        return history;
+    }
+
+    public void setHistory(HistoryOfCommands history) {
+        this.history = history;
+    }
+
     public void runApp() {
         System.out.println("Wazaaa. Введите help для получения списка команд");
 
@@ -61,6 +70,7 @@ public class App {
                     arg = input[1];
                 }
                 commandManager.getCommandByKey(input[0]).execute(arg);
+                history.add(commandManager.getCommandByKey(input[0]));
             } catch (NoSuchCommandException e) {
                 System.out.println("Кажется, такой команды не суествует! ");
             } catch (EOFInputException e) {

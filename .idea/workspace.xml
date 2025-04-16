@@ -4,34 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd5a02f7-ae47-44a4-8883-c8ed9484ce64" name="Changes" comment="first broken version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/EmptyInputException.java" afterDir="false" />
+    <list default="true" id="dd5a02f7-ae47-44a4-8883-c8ed9484ce64" name="Changes" comment="cm done + some new working commands">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/JsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FlatBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FlatBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InputReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HistoryOfCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HistoryOfCommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/AddCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/AddIfMaxCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/AddIfMaxCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/ClearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/ExecuteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/ExecuteCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/HelpCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/HistoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/HistoryCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/InfoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/MaxByDateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/MaxByDateCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/PrintUniqueCHCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/PrintUniqueCHCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/RemoveByCHCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/RemoveByCHCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/RemoveByIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/RemoveByIdCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/RemoveHeadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/RemoveHeadCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/SaveCommmand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/SaveCommmand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/ShowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/ShowCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/UpdateIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/UpdateIdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Flat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Flat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/House.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +91,8 @@
       <workItem from="1744089940047" duration="1649000" />
       <workItem from="1744100828143" duration="9819000" />
       <workItem from="1744118811106" duration="28244000" />
-      <workItem from="1744533675215" duration="27237000" />
+      <workItem from="1744533675215" duration="36782000" />
+      <workItem from="1744624890388" duration="7548000" />
     </task>
     <task id="LOCAL-00001" summary="first broken version">
       <option name="closed" value="true" />
@@ -121,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744321531293</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cm done + some new working commands">
+      <option name="closed" value="true" />
+      <created>1744580749214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744580749214</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first broken version" />
-    <option name="LAST_COMMIT_MESSAGE" value="first broken version" />
+    <MESSAGE value="cm done + some new working commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="cm done + some new working commands" />
   </component>
 </project>
